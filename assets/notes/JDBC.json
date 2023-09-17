@@ -1,0 +1,59 @@
+{
+  "JDBC (Java Database Connectivity)": {
+    "Introduction": {
+      "Purpose": "JDBC is a Java-based API that allows Java applications to interact with relational databases. It provides a standard interface for connecting to databases, executing SQL queries, and retrieving results.",
+      "Example": "To use JDBC, you need a JDBC driver specific to your database, and you'll create connections, execute SQL statements, and process results using Java code."
+    },
+    "Connecting to Databases": {
+      "Establishing a Connection": {
+        "Purpose": "To interact with a database, you must establish a connection using JDBC.",
+        "Example": {
+          "Connection URL": "String url = \"jdbc:mysql://localhost:3306/mydb\";",
+          "Connection Properties": "Properties props = new Properties();\nprops.setProperty(\"user\", \"username\");\nprops.setProperty(\"password\", \"password\");",
+          "Establishing Connection": "Connection conn = DriverManager.getConnection(url, props);"
+        }
+      },
+      "Driver Registration": {
+        "Purpose": "You need to register the JDBC driver before using it.",
+        "Example": {
+          "Driver Registration": "Class.forName(\"com.mysql.cj.jdbc.Driver\");"
+        }
+      }
+    },
+    "CRUD Operations": {
+      "Executing Queries": {
+        "Purpose": "JDBC allows you to execute SQL queries and statements on the database.",
+        "Example": {
+          "Executing a Query": "String sqlQuery = \"SELECT * FROM employees WHERE department = 'IT'\";\nStatement statement = conn.createStatement();\nResultSet resultSet = statement.executeQuery(sqlQuery);"
+        }
+      },
+      "Inserting Data": {
+        "Purpose": "You can insert new records into a database using JDBC.",
+        "Example": {
+          "Inserting Data": "String insertSQL = \"INSERT INTO employees (name, salary) VALUES ('John Doe', 50000)\";\nStatement statement = conn.createStatement();\nint rowsInserted = statement.executeUpdate(insertSQL);"
+        }
+      },
+      "Updating Data": {
+        "Purpose": "JDBC allows you to update existing records in a database.",
+        "Example": {
+          "Updating Data": "String updateSQL = \"UPDATE employees SET salary = 55000 WHERE name = 'John Doe'\";\nStatement statement = conn.createStatement();\nint rowsUpdated = statement.executeUpdate(updateSQL);"
+        }
+      },
+      "Deleting Data": {
+        "Purpose": "You can delete records from a database using JDBC.",
+        "Example": {
+          "Deleting Data": "String deleteSQL = \"DELETE FROM employees WHERE name = 'John Doe'\";\nStatement statement = conn.createStatement();\nint rowsDeleted = statement.executeUpdate(deleteSQL);"
+        }
+      },
+      "Processing Results": {
+        "Purpose": "After executing a query, you can process the results using JDBC.",
+        "Example": {
+          "Processing Results": {
+            "Iterating Through ResultSet": "while (resultSet.next()) {\n  String name = resultSet.getString(\"name\");\n  double salary = resultSet.getDouble(\"salary\");\n  // Process data\n}",
+            "Retrieving Specific Data": "String name = resultSet.getString(\"name\");\ndouble salary = resultSet.getDouble(\"salary\");"
+          }
+        }
+      }
+    }
+  }
+}

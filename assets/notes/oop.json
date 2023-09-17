@@ -1,0 +1,70 @@
+{
+  "Object-Oriented Programming (OOP) in Java": {
+    "Classes and Objects": {
+      "Additional Concepts": {
+        "Instance Variables": {
+          "Purpose": "Instance variables are properties of an object, and each object has its own copy of these variables.",
+          "Example": "class Person { String name; int age; }"
+        },
+        "Methods": {
+          "Purpose": "Methods define the behavior of a class and can perform actions or return values.",
+          "Example": "class Circle { double calculateArea() { /* Calculation code */ } }"
+        }
+      }
+    },
+    "Constructors": {
+      "Additional Concepts": {
+        "Constructor Overloading": {
+          "Purpose": "You can define multiple constructors with different parameter lists in a class.",
+          "Example": "class Person { Person(String name) { /* Code for name initialization */ }\nPerson(String name, int age) { /* Code for name and age initialization */ } }"
+        },
+        "Chaining Constructors": {
+          "Purpose": "Constructors can call other constructors within the same class using 'this()' keyword.",
+          "Example": "class Person { Person(String name) { this(name, 0); /* Call parameterized constructor */ }\nPerson(String name, int age) { /* Initialization code */ } }"
+        }
+      }
+    },
+    "Inheritance": {
+      "Additional Concepts": {
+        "Superclass and Subclass Relationship": {
+          "Purpose": "Inheritance establishes an 'is-a' relationship between the superclass and its subclasses.",
+          "Example": "class Vehicle { /* Members */ }\nclass Car extends Vehicle { /* Additional members */ }"
+        },
+        "Method Overloading vs. Method Overriding": {
+          "Purpose": "Method overloading involves defining multiple methods with the same name in a class, but with different parameter lists. Method overriding occurs when a subclass provides a specific implementation for a method already defined in the superclass.",
+          "Example": {
+            "Method Overloading": "class Calculator { int add(int a, int b) { /* Addition code */ }\ndouble add(double a, double b) { /* Addition code */ } }",
+            "Method Overriding": "class Animal { void makeSound() { /* Default sound */ } }\nclass Cat extends Animal { void makeSound() { /* Cat's sound */ } }"
+          }
+        }
+      }
+    },
+    "Polymorphism": {
+      "Additional Concepts": {
+        "Abstract Classes": {
+          "Purpose": "Abstract classes are classes that cannot be instantiated on their own. They provide a blueprint for subclasses to implement specific behavior.",
+          "Example": "abstract class Shape { abstract void draw(); }\nclass Circle extends Shape { void draw() { /* Circle drawing code */ } }"
+        },
+        "Interfaces": {
+          "Purpose": "Interfaces define a contract for classes to implement. A class can implement multiple interfaces.",
+          "Example": "interface Printable { void print(); }\nclass Document implements Printable { void print() { /* Printing code */ } }"
+        }
+      }
+    },
+    "Encapsulation and Access Modifiers": {
+      "Additional Concepts": {
+        "Immutable Objects": {
+          "Purpose": "Immutable objects have read-only properties, and their state cannot be changed after creation.",
+          "Example": "class ImmutablePerson { private final String name; public ImmutablePerson(String name) { this.name = name; } public String getName() { return name; } }"
+        },
+        "Access Modifiers with Inheritance": {
+          "Purpose": "Access modifiers affect the visibility of superclass members in subclasses.",
+          "Example": {
+            "Private Members": "Private members are not accessible in subclasses.",
+            "Protected Members": "Protected members are accessible in subclasses within the same package."
+          }
+        }
+      }
+    }
+  }
+}

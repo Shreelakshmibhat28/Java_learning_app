@@ -1,0 +1,47 @@
+{
+  "Exception Handling in Java": {
+    "Try-Catch Blocks": {
+      "Purpose": "Try-catch blocks are used to handle exceptions and prevent program crashes when unexpected errors occur.",
+      "Syntax": {
+        "Try Block": "The code that might throw an exception is placed in a 'try' block.",
+        "Catch Block": "The 'catch' block contains code to handle the exception if it occurs."
+      },
+      "Example": {
+        "Try Block": "try {\n  // Code that might throw an exception\n} catch (ExceptionType e) {\n  // Code to handle the exception\n}",
+        "Sample Exception Handling": {
+          "Try Block": "try {\n  int result = 10 / 0; // Division by zero\n} catch (ArithmeticException e) {\n  System.out.println(\"Error: Division by zero.\");\n}"
+        }
+      },
+      "Multiple Catch Blocks": {
+        "Purpose": "You can have multiple 'catch' blocks to handle different types of exceptions.",
+        "Example": {
+          "Multiple Catch Blocks": "try {\n  // Code that might throw an exception\n} catch (ExceptionType1 e) {\n  // Code to handle ExceptionType1\n} catch (ExceptionType2 e) {\n  // Code to handle ExceptionType2\n}"
+        }
+      },
+      "Finally Block": {
+        "Purpose": "The 'finally' block is used to execute code that should always run, whether an exception occurs or not.",
+        "Example": {
+          "Finally Block": "try {\n  // Code that might throw an exception\n} catch (ExceptionType e) {\n  // Code to handle the exception\n} finally {\n  // Code that always runs\n}"
+        }
+      }
+    },
+    "Throwing Exceptions": {
+      "Purpose": "You can use the 'throw' keyword to explicitly throw exceptions in your code.",
+      "Example": {
+        "Throwing an Exception": "if (someCondition) {\n  throw new ExceptionType(\"Error message\");\n}"
+      }
+    },
+    "Custom Exceptions": {
+      "Purpose": "Custom exceptions (user-defined exceptions) allow you to create your own exception classes tailored to your application's needs.",
+      "Steps": [
+        "Create a custom exception class by extending an existing exception class (e.g., 'Exception').",
+        "Define a constructor for your custom exception class to set the error message.",
+        "Throw the custom exception when needed in your code."
+      ],
+      "Example": {
+        "Custom Exception Class": "class CustomException extends Exception {\n  public CustomException(String message) {\n    super(message);\n  }\n}",
+        "Throwing Custom Exception": "if (someCondition) {\n  throw new CustomException(\"Custom error message\");\n}"
+      }
+    }
+  }
+}

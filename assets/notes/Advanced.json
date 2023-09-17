@@ -1,0 +1,71 @@
+{
+  "Advanced Topics in Java": {
+    "Lambdas and Functional Interfaces": {
+      "Purpose": "Lambdas and functional interfaces introduced in Java 8 allow you to write more concise and expressive code for functional programming tasks.",
+      "Example": {
+        "Lambda Expression": {
+          "Definition": "A lambda expression is a compact way to represent an anonymous function.",
+          "Example": "() -> System.out.println(\"Hello, Lambda!\");"
+        },
+        "Functional Interfaces": {
+          "Definition": "Functional interfaces have a single abstract method and can be used with lambdas.",
+          "Example": {
+            "Consumer Interface": "Consumer<String> printer = message -> System.out.println(message);\nprinter.accept(\"Hello, Lambda!\");",
+            "Predicate Interface": "Predicate<Integer> isEven = number -> number % 2 == 0;\nboolean result = isEven.test(4);"
+          }
+        }
+      }
+    },
+    "Streams": {
+      "Purpose": "Java Streams provide a powerful and concise way to work with sequences of data, making operations like filtering, mapping, and reducing more expressive.",
+      "Example": {
+        "Stream Creation": {
+          "Definition": "You can create a stream from a collection or by generating elements.",
+          "Example": {
+            "List to Stream": "List<String> names = Arrays.asList(\"Alice\", \"Bob\", \"Charlie\");\nStream<String> nameStream = names.stream();",
+            "Generating Elements": "Stream<Integer> numbers = Stream.of(1, 2, 3, 4, 5);"
+          }
+        },
+        "Stream Operations": {
+          "Definition": "Stream operations include 'filter', 'map', 'reduce', and more.",
+          "Example": {
+            "Filtering": "Stream<String> filteredNames = nameStream.filter(name -> name.length() > 3);",
+            "Mapping": "Stream<Integer> squaredNumbers = numbers.map(n -> n * n);",
+            "Reducing": "Optional<Integer> sum = numbers.reduce((a, b) -> a + b);"
+          }
+        }
+      }
+    },
+    "Reflection": {
+      "Purpose": "Reflection allows you to inspect and manipulate the structure, fields, and methods of Java classes at runtime.",
+      "Example": {
+        "Class Inspection": {
+          "Definition": "You can obtain class information and access its members dynamically.",
+          "Example": {
+            "Getting Class Information": "Class<?> clazz = MyClass.class;\nString className = clazz.getName();",
+            "Accessing Fields": "Field field = clazz.getDeclaredField(\"fieldName\");\nfield.setAccessible(true);\nObject value = field.get(instance);",
+            "Invoking Methods": "Method method = clazz.getDeclaredMethod(\"methodName\", parameterTypes);\nObject result = method.invoke(instance, args);"
+          }
+        }
+      }
+    },
+    "Networking": {
+      "Purpose": "Networking in Java allows you to create networked applications, communicate over sockets, and work with URLs and HTTP connections.",
+      "Example": {
+        "Socket Programming": {
+          "Definition": "Sockets provide a low-level communication interface over networks.",
+          "Example": {
+            "Server Socket": "ServerSocket serverSocket = new ServerSocket(8080);\nSocket clientSocket = serverSocket.accept();",
+            "Client Socket": "Socket socket = new Socket(\"hostname\", 8080);"
+          }
+        },
+        "URL Handling": {
+          "Definition": "Java provides classes to work with URLs for web communication.",
+          "Example": {
+            "URL Connection": "URL url = new URL(\"https://example.com\");\nURLConnection connection = url.openConnection();\nInputStream input = connection.getInputStream();"
+          }
+        }
+      }
+    }
+  }
+}

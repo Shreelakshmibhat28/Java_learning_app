@@ -1,0 +1,43 @@
+{
+  "Basic Syntax and Data Types": {
+    "Java Syntax": "Java programs are typically organized into classes and methods. A class contains the program's code, and methods define the behavior of the program.",
+    "Data Types": [
+      "int: Represents integers. Example: int age = 30;",
+      "double: Represents floating-point numbers. Example: double price = 19.99;",
+      "char: Represents a single character. Example: char grade = 'A';",
+      "boolean: Represents true or false values. Example: boolean isJavaFun = true;",
+      "String: Represents a sequence of characters. Example: String greeting = \"Hello, Java!\";"
+    ],
+    "Variables": {
+      "Definition": "Variables are used to store data in Java programs.",
+      "Example": "int x = 10; // Declare and initialize an integer variable 'x' with the value 10."
+    },
+    "Operators": {
+      "Arithmetic Operators": {
+        "+": "Addition",
+        "-": "Subtraction",
+        "*": "Multiplication",
+        "/": "Division",
+        "%": "Modulus (remainder)"
+      },
+      "Assignment Operators": {
+        "=": "Assign a value to a variable",
+        "+=": "Add and assign",
+        "-=": "Subtract and assign",
+        "*=": "Multiply and assign",
+        "/=": "Divide and assign",
+        "%=": "Modulus and assign"
+      }
+    },
+    "Input and Output": {
+      "Input": {
+        "Scanner Class": "Used for reading input from the user.",
+        "Example": "import java.util.Scanner;\nScanner scanner = new Scanner(System.in);\nint number = scanner.nextInt();"
+      },
+      "Output": {
+        "System.out.println()": "Prints data to the console.",
+        "Example": "System.out.println(\"Hello, Java!\");"
+      }
+    }
+  }
+}

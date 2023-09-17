@@ -1,0 +1,21 @@
+{
+  "Introduction to JAVA": {
+    "History of JAVA": "Java is a high-level programming language originally developed by Sun Microsystems in 1991. It was created by James Gosling and his team and was initially designed for interactive television, but it was too advanced for the digital cable television industry at the time.",
+    "Key Features of JAVA": [
+      "Platform Independence: Java programs can run on any platform that has a Java Virtual Machine (JVM).",
+      "Object-Oriented: Java is an object-oriented programming language, which means it is centered around objects that represent real-world entities.",
+      "Robust and Secure: Java has strong memory management and exception handling, making it robust and secure.",
+      "Multi-Threaded: Java supports multi-threading, allowing concurrent execution of tasks.",
+      "Rich Standard Library: Java provides a vast standard library that simplifies common programming tasks."
+    ],
+    "Java Virtual Machine (JVM)": {
+      "Definition": "JVM is an integral part of Java's runtime environment. It is responsible for executing Java byte code.",
+      "JVM Components": [
+        "Class Loader: Loads classes into memory.",
+        "Execution Engine: Executes Java byte code.",
+        "Garbage Collector: Manages memory by cleaning up unused objects.",
+        "Runtime Data Areas: Stores data used during program execution."
+      ]
+    }
+  }
+}

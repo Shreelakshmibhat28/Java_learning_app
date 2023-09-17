@@ -1,0 +1,48 @@
+{
+  "Control Flow": {
+    "Conditional Statements": {
+      "if Statement": {
+        "Usage": "Used for conditional execution of code.",
+        "Syntax": "if (condition) {\n  // Code to execute if the condition is true.\n}",
+        "Example": "int age = 25;\nif (age >= 18) {\n  System.out.println(\"You are an adult.\");\n}"
+      },
+      "else Statement": {
+        "Usage": "Used to specify code to execute when the condition is false.",
+        "Syntax": "if (condition) {\n  // Code to execute if the condition is true.\n} else {\n  // Code to execute if the condition is false.\n}",
+        "Example": "int age = 15;\nif (age >= 18) {\n  System.out.println(\"You are an adult.\");\n} else {\n  System.out.println(\"You are a minor.\");\n}"
+      },
+      "else if Statement": {
+        "Usage": "Used for multiple conditional checks.",
+        "Syntax": "if (condition1) {\n  // Code to execute if condition1 is true.\n} else if (condition2) {\n  // Code to execute if condition2 is true.\n} else {\n  // Code to execute if no conditions are true.\n}",
+        "Example": "int score = 75;\nif (score >= 90) {\n  System.out.println(\"A grade.\");\n} else if (score >= 80) {\n  System.out.println(\"B grade.\");\n} else {\n  System.out.println(\"C grade.\");\n}"
+      }
+    },
+    "Looping Structures": {
+      "while Loop": {
+        "Usage": "Executes a block of code while a condition is true.",
+        "Syntax": "while (condition) {\n  // Code to execute while the condition is true.\n}",
+        "Example": "int count = 1;\nwhile (count <= 5) {\n  System.out.println(\"Count: \" + count);\n  count++;\n}"
+      },
+      "for Loop": {
+        "Usage": "Used for iterating over a range of values.",
+        "Syntax": "for (initialization; condition; update) {\n  // Code to execute in each iteration.\n}",
+        "Example": "for (int i = 1; i <= 5; i++) {\n  System.out.println(\"Value of i: \" + i);\n}"
+      },
+      "do-while Loop": {
+        "Usage": "Executes a block of code at least once and then continues while a condition is true.",
+        "Syntax": "do {\n  // Code to execute at least once.\n} while (condition);",
+        "Example": "int num = 1;\ndo {\n  System.out.println(\"Number: \" + num);\n  num++;\n} while (num <= 5);"
+      }
+    },
+    "break & continue Statements": {
+      "break": {
+        "Usage": "Used to exit a loop prematurely.",
+        "Example": "for (int i = 1; i <= 10; i++) {\n  if (i == 5) {\n    break;\n  }\n  System.out.println(\"Value: \" + i);\n}"
+      },
+      "continue": {
+        "Usage": "Skips the current iteration of a loop and continues with the next iteration.",
+        "Example": "for (int i = 1; i <= 5; i++) {\n  if (i == 3) {\n    continue;\n  }\n  System.out.println(\"Value: \" + i);\n}"
+      }
+    }
+  }
+}

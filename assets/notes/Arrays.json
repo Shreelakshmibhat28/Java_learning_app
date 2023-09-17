@@ -1,0 +1,67 @@
+{
+  "Arrays and Collections in Java": {
+    "Arrays": {
+      "Introduction": "Arrays are data structures used to store multiple elements of the same data type. They provide a way to efficiently manage and access elements in a sequence.",
+      "Array Dimensions": {
+        "One-Dimensional Arrays": {
+          "Definition": "One-dimensional arrays are lists of elements arranged in a single line or row. They are commonly used for storing linear data.",
+          "Example": {
+            "Declaration": "int[] numbers = {1, 2, 3, 4, 5};",
+            "Accessing Elements": "Access an element: int value = numbers[2]; // Retrieves the third element (3)"
+          }
+        },
+        "Two-Dimensional Arrays": {
+          "Definition": "Two-dimensional arrays are arranged in rows and columns, forming a grid. They are useful for representing tabular data or matrices.",
+          "Example": {
+            "Declaration": "int[][] matrix = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};",
+            "Accessing Elements": "Access an element: int value = matrix[1][2]; // Retrieves element in row 2, column 3 (6)"
+          }
+        },
+        "Multi-Dimensional Arrays": {
+          "Definition": "Multi-dimensional arrays can have more than two dimensions. They are used for complex data structures.",
+          "Example": {
+            "Declaration": "int[][][] cube = {{{1, 2}, {3, 4}}, {{5, 6}, {7, 8}}};",
+            "Accessing Elements": "Access an element: int value = cube[0][1][0]; // Retrieves element in the first layer, second row, first column (3)"
+          }
+        }
+      },
+      "Types of Arrays": {
+        "Single-Dimensional Arrays": "Arrays with one dimension, such as int[] or String[].",
+        "Multidimensional Arrays": "Arrays with two or more dimensions, such as int[][] or char[][][].",
+        "Dynamic Arrays": "Arrays whose size can change dynamically, like ArrayLists (covered in Collections)."
+      }
+    },
+    "Collections": {
+      "ArrayLists": {
+        "Definition": "ArrayList is a part of the Java Collections Framework and is used to create resizable arrays. It provides dynamic resizing, making it convenient for managing lists of objects.",
+        "Example": {
+          "Declaration": "ArrayList<String> names = new ArrayList<>();",
+          "Operations": [
+            "Adding Elements: names.add(\"Alice\");",
+            "Accessing Elements: String name = names.get(0);",
+            "Iterating: for (String name : names) { /* Iterate through elements */ }",
+            "Size: int size = names.size();"
+          ]
+        }
+      },
+      "LinkedLists": {
+        "Definition": "LinkedList is another data structure in the Java Collections Framework. It implements a linked list, which consists of nodes linked together, allowing for efficient insertion and deletion of elements.",
+        "Example": {
+          "Declaration": "LinkedList<Integer> numbers = new LinkedList<>();",
+          "Operations": [
+            "Adding Elements: numbers.add(5);",
+            "Accessing Elements: int value = numbers.get(0);",
+            "Iterating: for (int num : numbers) { /* Iterate through elements */ }",
+            "Adding at Front: numbers.addFirst(10);",
+            "Adding at End: numbers.addLast(20);"
+          ]
+        }
+      },
+      "Other Java Collections": {
+        "HashSet": "A set that does not allow duplicate elements.",
+        "HashMap": "A map that stores key-value pairs.",
+        "Queue": "A collection for processing elements in a specific order."
+      }
+    }
+  }
+}

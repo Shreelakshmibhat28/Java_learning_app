@@ -1,0 +1,81 @@
+{
+  "Java API: Built-in Classes and Libraries": {
+    "Introduction": {
+      "Purpose": "The Java API (Application Programming Interface) includes a vast collection of built-in classes and libraries that simplify various programming tasks. These classes cover essential functionality for Java applications.",
+      "Example": "To use Java's built-in classes and libraries, you typically import them and then utilize their methods and features in your code."
+    },
+    "Commonly Used Built-in Classes": {
+      "String Class": {
+        "Purpose": "The 'String' class represents a sequence of characters and provides methods for string manipulation.",
+        "Example": {
+          "String Operations": {
+            "Concatenation": "String fullName = firstName + \" \" + lastName;",
+            "Substring": "String sub = str.substring(startIndex, endIndex);",
+            "Length": "int length = str.length();",
+            "Searching": "int index = str.indexOf(\"searchString\");"
+          }
+        }
+      },
+      "Date and Time Classes": {
+        "Purpose": "Java provides 'java.util.Date' and 'java.time' classes for date and time manipulation.",
+        "Example": {
+          "Date Formatting": "SimpleDateFormat sdf = new SimpleDateFormat(\"dd/MM/yyyy\");\nString formattedDate = sdf.format(new Date());",
+          "LocalDate and LocalDateTime": "LocalDate currentDate = LocalDate.now();\nLocalDateTime currentDateTime = LocalDateTime.now();"
+        }
+      },
+      "Collections Framework": {
+        "Purpose": "Java's collections framework includes classes like ArrayList, HashMap, HashSet, and others for efficient data storage and manipulation.",
+        "Example": {
+          "ArrayList": {
+            "Declaration": "ArrayList<String> list = new ArrayList<>();",
+            "Adding Elements": "list.add(\"Item\");",
+            "Iterating": "for (String item : list) { /* Iterate through elements */ }"
+          },
+          "HashMap": {
+            "Declaration": "HashMap<String, Integer> map = new HashMap<>();",
+            "Adding Key-Value Pairs": "map.put(\"Key\", 42);",
+            "Accessing Values": "int value = map.get(\"Key\");"
+          }
+        }
+      },
+      "File I/O (java.io)": {
+        "Purpose": "Java's 'java.io' package provides classes for input and output operations with files.",
+        "Example": {
+          "File Reading": "try (FileReader fileReader = new FileReader(\"file.txt\");\n     BufferedReader bufferedReader = new BufferedReader(fileReader)) {\n  String line;\n  while ((line = bufferedReader.readLine()) != null) {\n    // Process each line\n  }\n} catch (IOException e) {\n  // Handle the exception\n}",
+          "File Writing": "try (FileWriter fileWriter = new FileWriter(\"output.txt\");\n     BufferedWriter bufferedWriter = new BufferedWriter(fileWriter)) {\n  // Write data to the file\n} catch (IOException e) {\n  // Handle the exception\n}"
+        }
+      },
+      "Regular Expressions (java.util.regex)": {
+        "Purpose": "The 'java.util.regex' package allows you to work with regular expressions for pattern matching and text processing.",
+        "Example": {
+          "Pattern Matching": "Pattern pattern = Pattern.compile(\"\\d+\");\nMatcher matcher = pattern.matcher(\"12345\");\nboolean match = matcher.matches();"
+        }
+      }
+    },
+    "Other Built-in Classes and Libraries": {
+      "Math Class": {
+        "Purpose": "The 'Math' class provides mathematical functions and constants.",
+        "Example": {
+          "Math Operations": {
+            "Square Root": "double result = Math.sqrt(25.0);",
+            "Trigonometric Functions": "double sine = Math.sin(Math.PI / 2.0);"
+          }
+        }
+      },
+      "System Class": {
+        "Purpose": "The 'System' class provides access to system resources and standard I/O streams.",
+        "Example": {
+          "Standard Output": "System.out.println(\"Hello, Java!\");",
+          "Environment Variables": "String javaHome = System.getenv(\"JAVA_HOME\");"
+        }
+      },
+      "Networking (java.net)": {
+        "Purpose": "Java's 'java.net' package allows you to create network applications and work with sockets, URLs, and more.",
+        "Example": {
+          "Socket Programming": "Socket socket = new Socket(\"hostname\", port);",
+          "URL Handling": "URL url = new URL(\"https://example.com\");"
+        }
+      }
+    }
+  }
+}

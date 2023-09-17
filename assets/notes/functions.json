@@ -1,0 +1,40 @@
+{
+  "Functions and Methods": {
+    "Methods in Java": {
+      "Definition": "A method is a block of code that performs a specific task or function. In Java, methods are defined within classes and can be called to execute their code.",
+      "Declaration and Calling": {
+        "Declaration": "Methods are declared within a class using the following syntax:\n\nreturnType methodName(parameters) {\n  // Method body\n  // Optionally return a value using 'return'\n}\n\nExample:",
+        "Calling": "To call a method, use its name followed by parentheses. If the method has parameters, provide the required arguments within the parentheses.\n\nExample:",
+        "Full Example": {
+          "Declaration": "public void printMessage(String message) {\n  System.out.println(message);\n}",
+          "Calling": "printMessage(\"Hello, Java!\");"
+        }
+      },
+      "Method Parameters": {
+        "Definition": "Parameters are variables that are used to pass data to a method. They are defined in the method's declaration and act as placeholders for the data that will be passed when the method is called.",
+        "Example": {
+          "Declaration": "public void greet(String name) {\n  System.out.println(\"Hello, \" + name + \"!\");\n}",
+          "Calling": "Calling the method: greet(\"Alice\");"
+        },
+        "Multiple Parameters": {
+          "Declaration": "public void calculateSum(int num1, int num2) {\n  int sum = num1 + num2;\n  System.out.println(\"Sum: \" + sum);\n}",
+          "Calling": "Calling the method: calculateSum(5, 3);"
+        }
+      },
+      "Method Overloading": {
+        "Definition": "Method overloading allows a class to have more than one method with the same name but different parameters. The compiler differentiates between overloaded methods based on the number or type of parameters.",
+        "Example": [
+          {
+            "Declaration": "public int add(int a, int b) {\n  return a + b;\n}",
+            "Calling": "Calling the method: int result = add(3, 5);"
+          },
+          {
+            "Declaration": "public double add(double a, double b) {\n  return a + b;\n}",
+            "Calling": "Calling the method: double result = add(2.5, 4.3);"
+          }
+        ],
+        "Use Cases": "Method overloading is useful when you want to provide flexibility in method usage while maintaining a common method name."
+      }
+    }
+  }
+}
